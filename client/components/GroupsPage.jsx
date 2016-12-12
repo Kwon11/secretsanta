@@ -43,7 +43,7 @@ import santaStore from './SantaStore';
     var current = santaStore.currentGroup;
     var group = santaStore.groupData[current];
     var sliced = group.users.slice();
-    var listOfUsers = santaStore.allUsers.slice();
+    // var listOfUsers = santaStore.allUsers.slice();
     console.log('group Name: ', group.name);
     console.log('summary :', group.summary);
     console.log('summary :', sliced);
@@ -62,13 +62,7 @@ import santaStore from './SantaStore';
               )
             }
           </ListGroup>
-          <ListGroup>
-            {
-              listOfUsers.map((user, index) =>
-                  <ListGroupItem user={user} key={index} > {user} </ListGroupItem>
-                )
-            }
-          </ListGroup>
+
       </div>
       );
   }

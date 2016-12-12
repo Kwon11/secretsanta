@@ -10,7 +10,7 @@ class SantaStore {
     extendObservable(this, {
       wishListData: data,
       groupData: groupData,
-      pendingList: [{avatar:'http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg'}, {avatar: 'http://www.w3schools.com/css/trolltunga.jpg'}],
+      pendingList: [{avatar:'http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg', GroupName: 'HR50', DueDate: '12/25/2016'}, {avatar: 'http://www.w3schools.com/css/trolltunga.jpg', GroupName: 'Family', DueDate: '12/28/2016'}],
       currentUser: 'Bob',
       currentGroup: 0,
       itemSearchData: [],

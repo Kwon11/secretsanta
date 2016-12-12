@@ -72,3 +72,11 @@
   height: 10%;
   width: 10%;
 }
+
+.TargetGroupName {
+  color: aqua;
+}
+
+.DueDate {
+  color: red;
+}

@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import GroupItem from './GroupItem.jsx';
 import { observer } from 'mobx-react';
 import santaStore from './SantaStore';
+import NavBarComponent from './NavBarComponent';
 
 var GroupBox = observer(class GroupBox extends React.Component { //ES6 class
   constructor (props) {
@@ -24,16 +25,9 @@ var GroupBox = observer(class GroupBox extends React.Component { //ES6 class
 
   render () { //needs a button and subcomponent GroupItem
     return ( //wrap this whole thing in a table
-
+      <div id="NavBar">
+       <NavBarComponent />
       <div id="GroupBox">
-        <ButtonToolbar>
-        <ul>
-          <li><Link to="addgroup">Add Group</Link></li> 
-          <li><Link to="adduser">Add User</Link></li> 
-          <li><Link to="additem">Add Item</Link></li>
-        </ul>
-        </ButtonToolbar>
-
         <ListGroup>
           {
             santaStore.groupData.map((group, index) =>
@@ -41,6 +35,7 @@ var GroupBox = observer(class GroupBox extends React.Component { //ES6 class
             )
           }
         </ListGroup>
+      </div>
       </div>
       );
   }

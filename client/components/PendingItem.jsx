@@ -17,8 +17,7 @@ class PendingItem extends React.Component {
   render () {
     return (
         <ListGroupItem className="PendingItem">
-          <img className="TargetAvatar" src={this.props.avatar} />
-          <div>{this.props.item.avatar}</div>
+          <img className="TargetAvatar" src={this.props.item.avatar} />
           <div>{'GroupName'} </div>
           <div>{'due date of group'}</div>
           <div onClick={this.handleClick}>{'Take me to their wishlist'}</div>

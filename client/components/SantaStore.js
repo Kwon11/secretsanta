@@ -1,8 +1,8 @@
 // MOBX store
 // SantaStore.js
 import { autorun, extendObservable } from 'mobx';
-import data from '../appData';
-import groupData from '../../fakeGroupData';
+//import data from '../appData';
+//import groupData from '../../fakeGroupData';
 
 class SantaStore {
 
@@ -14,8 +14,10 @@ class SantaStore {
       currentUser: 'Bob',
       currentGroup: 0,
       itemSearchData: [],
-      allUsers: null
-    })
+      allUsers: [],
+      uploadImg: ''
+    });
+
 
   }
  // MOBX mutates state directly in the store

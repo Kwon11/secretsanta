@@ -1,4 +1,4 @@
-import { ListGroup, ListGroupItem, Nav, NavItem, Grid, Row, Col, Thumbnail, Button, ButtonToolbar  }  from 'react-bootstrap';
+import { ListGroup, ListGroupItem, Nav, NavItem, Grid, Row, Col, Thumbnail, Button, ButtonToolbar} from 'react-bootstrap';
 import React from 'react';
 
 class PendingItem extends React.Component {
@@ -6,7 +6,7 @@ class PendingItem extends React.Component {
     super(props);
     this.state = {
 
-    }
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -22,7 +22,7 @@ class PendingItem extends React.Component {
           <div className="DueDate">{this.props.item.DueDate}</div>
           <div onClick={this.handleClick}>{'Take me to their wishlist'}</div>
         </ListGroupItem>
-      );
+    );
   }
 
 }
